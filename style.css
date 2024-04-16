@@ -36,8 +36,9 @@ body {
     color: var(--verde);
 }
 
+
 .botao {
-    font-family: "Crakra Petch", sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -60,8 +61,7 @@ body {
     display: block;
 }
 
-.ativo {
-
+.botao.ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
 }
@@ -90,11 +90,10 @@ body {
 }
 
 .contador{
-    display: flex;
+    display:flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .contador-digito{
     padding: 0 16px;
     text-align: center;
@@ -103,7 +102,15 @@ body {
 
 .contador-digito-numero{
     font-size: 80px;
-    margin: 0px;
+    margin: 0;
+
+}
+
+.contador-digito-texto{
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -118,43 +125,4 @@ body {
     .botao:last-child {
         border-radius: 0 40px 0 0;
     }
-}: "Chakra-Petch", sans-serif;
-    background-color: var(--botao-inativo);
-    color: var(--branco);
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    font-size: 18px;
-    align-items: center;
-    width: 100%;
-    border-bottom: 4px solid var(--botao-ativo);
-    border-left: 4px solid var(--botao-ativo);
-    border-right: 4px solid var(--botao-ativo);
-    border-top: none;}
-
-    .botao:first-child {
-        border-radius: 40px 40px 0 0;
-    }
-    
-    .botoes {
-        display: block;
-    }
-    
-    .ativo{
-        background-color: var(--botao-ativo);
-        border-bottom: 4px solid var(--verde);
-    }
-    
-    @media screen and (min-width: 768px) {
-        .botoes {
-            display: flex;
-        }
-    
-        .botao:first-child {
-            border-radius: 40px 0 0 0;
-        }
-    
-        .botao:last-child {
-            border-radius: 0 40px 0 0;
-        }
-    }
+}
